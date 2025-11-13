@@ -17,16 +17,18 @@ Su propósito es ofrecer una experiencia moderna, dinámica y juvenil, con anima
 
 ---
 ## 📁 Estructura del Proyecto
+
+```text
 src/
-├── assets/ # Imágenes y recursos multimedia
-├── components/ # Componentes reutilizables (cards, menús, artículos)
-├── layouts/ # Estructuras generales del sitio (Layout principal)
-├── pages/ # Secciones principales (Satmun, Infantil, Literatura, etc.)
-├── context/ # Manejo de tema oscuro y configuración global
-├── App.jsx # Enrutamiento y estructura principal
-├── main.jsx # Punto de entrada de la aplicación
-└── index.css # Estilos base y configuración Tailwind
----
+ ├── assets/              # Imágenes y recursos multimedia
+ ├── components/          # Componentes reutilizables (cards, menús, artículos)
+ ├── layouts/             # Estructuras generales del sitio (Layout principal)
+ ├── pages/               # Secciones principales (Satmun, Infantil, Literatura, etc.)
+ ├── context/             # Manejo de tema oscuro y configuración global
+ ├── App.jsx              # Enrutamiento y estructura principal
+ ├── main.jsx             # Punto de entrada de la aplicación
+ └── index.css            # Estilos base y configuración Tailwind
+```
 
 ## 🚀 Despliegue del Proyecto
 
