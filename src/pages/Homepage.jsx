@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../layouts/Layout";
 import ImageSlider from "../components/ImageSlider"; 
+import Editorial from "../components/Editorial";
 
 
 function Homepage() {
@@ -16,7 +17,7 @@ function Homepage() {
       
 
       {/* Sección editorial */}
-
+      <Editorial />
 
     </Layout>
   );
