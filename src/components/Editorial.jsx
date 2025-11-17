@@ -16,8 +16,7 @@ export default function Editorial() {
 
       {/* Imagen tipo revista con animación y pie de foto */}
       <div
-        className="float-right md:w-64 w-52 ml-6 mb-4 text-center"
-        data-aos="zoom-in"
+        className="float-right md:w-64 w-52 ml-6 mb-4 text-center"        data-aos="zoom-in"
       >
         <img
           src="/images/HnaO.jpg"

@@ -1,4 +1,4 @@
-// tailwind.config.js
+
 module.exports = {
   darkMode: 'class',
   content: [
@@ -15,7 +15,7 @@ module.exports = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
         },
-        eightPath: {                // <-- agregado
+        eightPath: {                
           "0%":   { transform: "translate(0, 0)" },
           "25%":  { transform: "translate(40px, -45px)" },
           "50%":  { transform: "translate(0, -40px)" },
@@ -25,7 +25,7 @@ module.exports = {
       },
       animation: {
         float: 'float 3s ease-in-out infinite',
-        eight: "eightPath 4s linear infinite", // <-- agregado
+        eight: "eightPath 4s linear infinite", 
       },
     },
   },
