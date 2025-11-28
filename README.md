@@ -81,5 +81,5 @@ npm run build
 **Desarrollado por:**  
 👨‍💻 **Ramiro Andrés Jaimes Blanco**  
 Estudiante de **Análisis y Desarrollo de Software - SENA**  
-📍 Desarrollado en el **Departamento de Tecnología y Comunicaciones**  
+📍 Desarrollado en el **Departamento de Tecnología y Comunicaciones Colegio La Presentacion Santa Teresa Cucuta**  
 📅 2025
