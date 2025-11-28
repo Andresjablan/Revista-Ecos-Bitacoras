@@ -1,13 +1,14 @@
 import React from "react";
 import Layout from "../layouts/Layout";
-import Enconstruccion from "../components/Enconstruccion";
+import MenuArticulo from "../components/MenuArticulo";
 
 
 export default function CienciaLiteratura() {
   return (
     <Layout>
-      <Enconstruccion />
+      <MenuArticulo />
     </Layout>
   );
 }
+
 

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
+
 import Homepage from "./pages/Homepage";
 import CienciaLiteratura from "./pages/CienciaLiteratura";
 import CulturaTecnologia from "./pages/CulturaTecnologia";
@@ -9,7 +10,13 @@ import Infantil from "./pages/Infantil";
 import Satmun from "./pages/Satmun";
 import Zapping from "./pages/Zapping";
 
+{/* Importacion Articulos */}
+import ArticuloCronica from "./components/Articulo";
+import ArticuloDiaTierra from "./components/Articulo2";
+
+
 import ScrollToTop from "./components/ScrollToTop";
+import Layout from "./layouts/Layout";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -33,6 +40,24 @@ export default function App() {
         <Route path="/infantil" element={<Infantil />} />
         <Route path="/satmun" element={<Satmun />} />
         <Route path="/zapping" element={<Zapping />} />
+
+        {/* Ruta Artículos */}
+        <Route
+          path="/ciencia-literatura/cronica"
+          element={
+            <Layout>
+              <ArticuloCronica />
+            </Layout>
+          }
+        />
+        <Route
+          path="/ciencia-literatura/dia-tierra"
+          element={
+            <Layout>
+              <ArticuloDiaTierra />
+            </Layout>
+          }
+        />
       </Routes>
     </div>
   );
