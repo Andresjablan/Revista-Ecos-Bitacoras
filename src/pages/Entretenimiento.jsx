@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../layouts/Layout";
-import Enconstruccion from "../components/Enconstruccion";
+import GridArticulos from "../components/MenuArticuloE";
 
 export default function Entretenimiento() {
   return (
     <Layout>
-      <Enconstruccion />
+      <GridArticulos />
     </Layout>
   );
 }

@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-
-
 import Homepage from "./pages/Homepage";
 import CienciaLiteratura from "./pages/CienciaLiteratura";
 import CulturaTecnologia from "./pages/CulturaTecnologia";
@@ -13,6 +11,8 @@ import Zapping from "./pages/Zapping";
 {/* Importacion Articulos */}
 import ArticuloCronica from "./components/Articulo";
 import ArticuloDiaTierra from "./components/Articulo2";
+import ArticuloCometas from "./components/Articulo4";
+import ArticuloEaster from "./components/Articulo5";
 
 
 import ScrollToTop from "./components/ScrollToTop";
@@ -55,6 +55,22 @@ export default function App() {
           element={
             <Layout>
               <ArticuloDiaTierra />
+            </Layout>
+          }
+        />
+        <Route
+          path="/entretenimiento/cometas"
+          element={
+            <Layout>
+              <ArticuloCometas />
+            </Layout>
+          }
+        />
+        <Route
+          path="/entretenimiento/easter"
+          element={
+            <Layout>
+              <ArticuloEaster />
             </Layout>
           }
         />

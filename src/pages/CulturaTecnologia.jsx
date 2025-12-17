@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../layouts/Layout";
-import Enconstruccion from "../components/Enconstruccion";
+import ArticuloRevistaCultura from "../components/Articulo6";
 
 export default function CulturaTecnologia() {
   return (
     <Layout>
-      <Enconstruccion />
+      <ArticuloRevistaCultura />
     </Layout>
   );
 }

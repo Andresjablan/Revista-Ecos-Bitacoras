@@ -7,7 +7,7 @@ export default function ArticuloCronica() {
   const navigate = useNavigate();
    useEffect(() => {
       AOS.init({ duration: 1000, once: true });
-      AOS.refresh(); // refresca AOS para detectar nuevos elementos
+      AOS.refresh(); 
     }, []);
 
   const parrafos = [
@@ -28,8 +28,8 @@ export default function ArticuloCronica() {
           src="/images/Cartagena2.jpg"
           alt="Cartagena"
           className="md:float-right md:ml-6 md:mb-4 w-full md:w-1/2 rounded-lg shadow transition-transform duration-300" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         />
 
         {parrafos.map((p, i) => (
