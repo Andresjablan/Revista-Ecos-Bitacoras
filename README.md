@@ -1,4 +1,4 @@
-git# 🐝 Front – Revista ECOS del Colegio Santa Teresa La Presentación
+🐝 Front – Revista ECOS del Colegio Santa Teresa La Presentación
 
 Este proyecto es el **rediseño de la Revista ECOS** del **Colegio de La Presentación**, desarrollado con **React + Vite** y **Tailwind CSS**.  
 Su propósito es ofrecer una experiencia moderna, dinámica y juvenil, con animaciones, transiciones suaves y compatibilidad con modo oscuro 🌙.
