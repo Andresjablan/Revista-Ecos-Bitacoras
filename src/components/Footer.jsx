@@ -23,21 +23,21 @@ function Footer() {
           <p className="text-sm font-semibold dark:text-slate-100">Síguenos</p>
           <div className="flex gap-3">
             <a
-              href="#"
+              href="https://www.facebook.com/colegiolapresentacionsantateresacucuta/"
               className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center 
                          hover:bg-white/20 dark:bg-slate-700/40 dark:hover:bg-slate-600/60 transition"
             >
               <FacebookIcon fontSize="small" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/colpre.santateresa?igsh=MmJsN3ZvY2Y4ZzJi"
               className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center 
                          hover:bg-white/20 dark:bg-slate-700/40 dark:hover:bg-slate-600/60 transition"
             >
               <InstagramIcon fontSize="small" />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/channel/UCPVYMlR3dOmM2DE3T89_Fzg"
               className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center 
                          hover:bg-white/20 dark:bg-slate-700/40 dark:hover:bg-slate-600/60 transition"
             >

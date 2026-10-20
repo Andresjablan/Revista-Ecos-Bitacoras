@@ -34,7 +34,7 @@ function Navbar() {
         {/* LOGO IZQUIERDA */}
         <Link to="/">
           <img
-            src="/images/LogoEco.png"
+            src="/images/Recurso1.png"
             alt="Logo Revista Ecos"
             className="w-25 h-16 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90"
           />
@@ -74,7 +74,7 @@ function Navbar() {
             rel="noopener noreferrer"
           >
             <img
-              src="/Escudo2.png"
+              src="/Escudo5.png"
               alt="Escudo"
               className="hidden md:block w-16 h-14 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90"
             />
