@@ -28,15 +28,23 @@ function Navbar() {
   const { dark, toggleDarkMode } = useTheme();
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
-      <div className="mx-auto px-4 py-6 flex items-center justify-between">
+    <header 
+      className="fixed top-0 left-0 w-full z-50 text-slate-800 dark:text-slate-100 transition-colors duration-500 overflow-hidden shadow-sm"
+      style={{
+        backgroundImage: `url('/images/borde.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'bottom center', // Clave: fuerza a mostrar la parte de abajo de la imagen (la franja de colores)
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="mx-auto px-4 py-4 flex items-center justify-between relative z-10 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm">
 
         {/* LOGO IZQUIERDA */}
         <Link to="/">
           <img
-            src="/images/Recurso1.png"
+            src="/images/escoslogo25.png"
             alt="Logo Revista Ecos"
-            className="w-25 h-16 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90"
+            className="w-25 h-16 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90 drop-shadow-sm"
           />
         </Link>
 
@@ -46,7 +54,7 @@ function Navbar() {
             <Link
               key={l.name}
               to={l.path}
-              className="flex items-center gap-2 text-slate-700 hover:text-cyan-600 transition duration-200"
+              className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-cyan-600 dark:hover:text-cyan-400 transition duration-200"
             >
               {l.icon}
               {l.name}
@@ -76,12 +84,12 @@ function Navbar() {
             <img
               src="/Escudo5.png"
               alt="Escudo"
-              className="hidden md:block w-16 h-14 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90"
+              className="hidden md:block w-16 h-14 object-contain transition-transform duration-200 hover:scale-110 hover:opacity-90 drop-shadow-sm"
             />
           </a>
 
           <button
-            className="md:hidden p-2 rounded-lg bg-white border"
+            className="md:hidden p-2 rounded-lg bg-white/80 dark:bg-slate-800/80 border dark:border-slate-700 text-slate-800 dark:text-white"
             onClick={() => setMenuOpen(true)}
           >
             ☰
@@ -91,11 +99,11 @@ function Navbar() {
 
       {/* MENU MOBILE */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-md border-b z-40 p-6">
+        <div className="absolute top-full left-0 w-full bg-white/95 dark:bg-slate-900/95 shadow-md border-b dark:border-slate-800 z-40 p-6 backdrop-blur-md transition-colors duration-500">
 
           <button
             onClick={() => setMenuOpen(false)}
-            className="absolute right-4 top-4 text-xl text-slate-700"
+            className="absolute right-4 top-4 text-xl text-slate-700 dark:text-slate-300"
           >
             ✕
           </button>
@@ -106,7 +114,7 @@ function Navbar() {
                 key={l.name}
                 to={l.path}
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center gap-2 text-slate-700 hover:text-cyan-600 transition duration-200"
+                className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-cyan-600 transition duration-200"
               >
                 {l.icon}
                 {l.name}
@@ -116,7 +124,7 @@ function Navbar() {
             {/*ICONO DARK MODE EN MOBILE */}
             <button
               onClick={() => { toggleDarkMode(); setMenuOpen(false); }}
-              className="flex items-center gap-2 text-slate-700 hover:text-cyan-600 transition p-2"
+              className="flex items-center gap-2 text-slate-900 dark:text-white font-medium hover:text-cyan-600 transition p-2"
             >
               {dark ? (
                 <LightModeIcon fontSize="small" style={{ color: "#facc15" }} />
