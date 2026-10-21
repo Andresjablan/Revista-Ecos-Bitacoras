@@ -14,12 +14,12 @@ import { useTheme } from "../context/ThemeContext";
 
 
 const navLinks = [
-  { name: "Inicio", path: "/", icon: <HomeIcon fontSize="small" /> },
-  { name: "Ciencia y Literatura", path: "/ciencia-literatura", icon: <LocalLibraryIcon fontSize="small" /> },
-  { name: "Cultura y Tecnología", path: "/cultura-tecnologia", icon: <PsychologySharpIcon fontSize="small" /> },
-  { name: "Infantil", path: "/infantil", icon: <ChildCareSharpIcon fontSize="small" /> },
-  { name: "Zapping", path: "/zapping", icon: <ResetTvIcon fontSize="small" /> },
-  { name: "Entretenimiento", path: "/entretenimiento", icon: <VideogameAssetIcon fontSize="small" /> },
+  { name: "Inicio", path: "/", icon: <HomeIcon fontSize="small" className="text-[#E74029]" /> },
+  { name: "Ciencia y Literatura", path: "/ciencia-literatura", icon: <LocalLibraryIcon fontSize="small" className="text-[#FAB81C]" /> },
+  { name: "Cultura y Tecnología", path: "/cultura-tecnologia", icon: <PsychologySharpIcon fontSize="small" className="text-[#2C75BA]" /> },
+  { name: "Infantil", path: "/infantil", icon: <ChildCareSharpIcon fontSize="small" className="text-[#E74029]" /> },
+  { name: "Zapping", path: "/zapping", icon: <ResetTvIcon fontSize="small" className="text-[#FAB81C]" /> },
+  { name: "Entretenimiento", path: "/entretenimiento", icon: <VideogameAssetIcon fontSize="small" className="text-[#2C75BA]" /> },
   { name: "Satmun", path: "/satmun", icon: <LanguageIcon fontSize="small" /> },
 ];
 

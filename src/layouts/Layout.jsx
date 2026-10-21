@@ -4,14 +4,16 @@ import Footer from "../components/Footer";
 
 function Layout({ children }) {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      {/* Este padding baja el contenido para que no lo tape el navbar fijo */}
-      <main className="pt-20">
+      
+      {/* flex-grow empuja el contenido y mantiene el footer siempre abajo */}
+      <main className="flex-grow pt-20">
         {children}
       </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
 
